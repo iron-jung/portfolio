@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>O-IT Portfolio 📖</title>
+        <title>O.IT Portfolio 📖</title>
       </Head>
 
       <DefaultLayout>
