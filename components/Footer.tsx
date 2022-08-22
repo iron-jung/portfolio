@@ -19,7 +19,7 @@ const Footer = () => {
             className="text-sm text-gray-500 transition hover:text-gray-600"
             target="_blank"
             rel="noopener noreferrer"
-            href="siteMetadata.linkedin"
+            href="https://www.linkedin.com/in/jungchuloh"
           >
             <span className="sr-only">Linkedin</span>
             <SiLinkedin size="2rem" />
@@ -28,7 +28,7 @@ const Footer = () => {
             className="text-sm text-gray-500 transition hover:text-gray-600"
             target="_blank"
             rel="noopener noreferrer"
-            href="`mailto:${siteMetadata.email}`"
+            href="`mailto:jungjob1114@gmail.com`"
           >
             <span className="sr-only">mail</span>
             <SiGmail size="2rem" />
@@ -37,16 +37,16 @@ const Footer = () => {
             className="text-sm text-gray-500 transition hover:text-gray-600"
             target="_blank"
             rel="noopener noreferrer"
-            href="siteMetadata.facebook"
+            href="https://www.instagram.com/chul_five"
           >
-            <span className="sr-only">facebook</span>
+            <span className="sr-only">instagram</span>
             <SiInstagram size="2rem" />
           </a>
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>Copyright © {new Date().getFullYear()}</div>
-          <div>•</div>
-          <a href="/test">o-it s blog - wowwow pops</a>
+          <div>• O.IT Portfolio</div>
+          {/* <a href="/test">o-it s blog - wowwow pops</a> */}
         </div>
       </div>
     </footer>

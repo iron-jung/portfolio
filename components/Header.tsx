@@ -5,6 +5,7 @@ import React from "react";
 import shortid from "shortid";
 import { MenuList } from "../data/MenuList";
 import useIsScroll from "../hooks/useIsScroll";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const Header = () => {
       <div
         className={classNames(
           "bg-white dark:bg-gray-900 px-10 overflow-hidden font-2xl md:overflow-visible dark:text-blue-200",
-          { "shadow-md": isScroll }
+          { "shadow-md dark:shadow-gray-800": isScroll }
         )}
       >
         <div

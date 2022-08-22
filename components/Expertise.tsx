@@ -10,25 +10,44 @@ const Expertise = () => {
 
         <ul className="flex flex-wrap gap-4 items-center">
           <li className="flex items-center">
-            <div className="h-10 w-10 rounded-sm drop-shadow-sm"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/jquery.svg" alt="jquery" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10 rounded-sm drop-shadow-sm"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/nextdotjs.svg" alt="nextdotjs" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/javascript.svg" alt="javascript" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/react.svg" alt="react" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/bootstrap.svg" alt="bootstrap" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/tailwindcss.svg" alt="tailwindcss" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/apachecordova.svg" alt="apachecordova" />
+            </picture>
+          </li>
+          <li className="flex items-center">
+            <picture className="h-10 w-10">
+              <img src="/image/icon/nodedotjs.svg" alt="nodedotjs" />
+            </picture>
           </li>
         </ul>
       </div>
@@ -38,10 +57,24 @@ const Expertise = () => {
         </h2>
         <ul className="mb-6 flex flex-wrap gap-4">
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/spring.svg" alt="spring" />
+            </picture>
           </li>
           <li className="flex items-center">
-            <div className="h-10 w-10"></div>
+            <picture className="h-10 w-10">
+              <img src="/image/icon/springboot.svg" alt="springboot" />
+            </picture>
+          </li>
+          <li className="flex items-center">
+            <picture className="h-10 w-10">
+              <img src="/image/icon/oracle.svg" alt="oracle" />
+            </picture>
+          </li>
+          <li className="flex items-center">
+            <picture className="h-10 w-10">
+              <img src="/image/icon/mariadb.svg" alt="mariadb" />
+            </picture>
           </li>
         </ul>
       </div>

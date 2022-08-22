@@ -11,7 +11,7 @@ export const MyTimeLine: MyTimeLineType[] = [
   {
     imgSrc: "image/icon/company.svg",
     title: "(주)코코아플러스",
-    currently: true,
+    currently: false,
     fromAt: "2021. 07",
     toAt: "2022. 05",
     desc: "공공기관 사업(한국도로공사, 경찰청 도시교통센터)에 참여 Spring Framwork, IBatis, Oracle로 작업했으며 화면은 Jquery, vanilla JS로 작업 사용된 라이브러리 제한으로 DataTables JavaScript 라이브러리로 Grid 작업, RestAPI 개방 프로젝트에 기존 RestAPI 개방 로직의 복잡한 로직을 코드줄임 작업을 실현함 또한 회사 자체 개발 프로젝트에서 신규로 Vue.js 도입 Ionic Framwork로 안드로이드 앱 개발 Spring Boot, 복잡한 서버 배포에 Jenkins 도입으로 간편 배포를 실현함",

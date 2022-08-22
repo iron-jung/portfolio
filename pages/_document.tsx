@@ -18,7 +18,7 @@ class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html>
+      <Html lang="ko">
         <Head>
           <meta name="description" content="O.IT을 소개합니다! 👋" />
           <meta
