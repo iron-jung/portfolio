@@ -58,6 +58,9 @@ const Header = () => {
           </ul>
         </div>
       </div>
+      <div className="absolute top-5 left-3 md:top-7 md:left-10">
+        <DarkModeSwitch />
+      </div>
     </nav>
   );
 };
