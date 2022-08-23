@@ -12,8 +12,4 @@ export const MenuList: MenuType[] = [
     title: "Projects",
     src: "/projects",
   },
-  // {
-  //   title: "Blog",
-  //   src: "/blog",
-  // },
 ];

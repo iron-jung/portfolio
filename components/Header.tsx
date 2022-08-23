@@ -17,7 +17,10 @@ const Header = () => {
       <div
         className={classNames(
           "bg-white dark:bg-gray-900 px-10 overflow-hidden font-2xl md:overflow-visible dark:text-blue-200",
-          { "shadow-md dark:shadow-gray-800": isScroll }
+          {
+            "shadow-[0_4px_4px_-1px_rgb(0,0,0,0.1)] dark:shadow-gray-800":
+              isScroll,
+          }
         )}
       >
         <div
@@ -57,6 +60,9 @@ const Header = () => {
             })}
           </ul>
         </div>
+      </div>
+      <div className="absolute top-5 left-10 md:top-7">
+        <DarkModeSwitch />
       </div>
     </nav>
   );
