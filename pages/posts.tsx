@@ -31,18 +31,28 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
           </p>
         </header>
         <div className="space-y-16 mx-auto max-w-7xl">
-          {pages.map((page) => {
-            const { id, pageTitle, createdAt, tag, subTitle } = page;
-            return (
-              <PostItem
-                key={id}
-                pageTitle={pageTitle}
-                subTitle={subTitle}
-                createdAt={createdAt}
-                tag={tag}
-              />
-            );
-          })}
+          {pages.length ? (
+            pages.map((page) => {
+              const { id, pageTitle, createdAt, tag, subTitle } = page;
+              return (
+                <PostItem
+                  key={id}
+                  pageTitle={pageTitle}
+                  subTitle={subTitle}
+                  createdAt={createdAt}
+                  tag={tag}
+                />
+              );
+            })
+          ) : (
+            <div>
+              <article className="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]">
+                <h3 className="text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200 text-center">
+                  블로그 포스터 정보가 존재하지 않습니다.
+                </h3>
+              </article>
+            </div>
+          )}
         </div>
       </DefaultLayout>
     </>
