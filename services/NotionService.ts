@@ -4,10 +4,13 @@ import {
   PartialPageObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
 
+const NOTION_AUTH = process.env.NEXT_PUBLIC_NOTION_AUTH!;
+const DATABASE_ID = process.env.NEXT_PUBLIC_DATABASE_ID!;
+
 export default class NotionService {
-  private static _databaseId = "8e3f08a0a1bb432ea75832e76659acaf";
+  private static _databaseId = DATABASE_ID;
   private static notion = new Client({
-    auth: "secret_ghtzBojrM82RNjSswdGZAb7SFszpq3tGJ61eae2EDQb",
+    auth: NOTION_AUTH,
   });
 
   public static async getDevDatabase(): Promise<PageObjectResponse[]> {
