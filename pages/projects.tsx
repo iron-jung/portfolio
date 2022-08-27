@@ -1,9 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import ProjectCard from "../../components/ProjectCard";
-import DefaultLayout from "../../layouts/DefaultLayout";
+import ProjectCard from "../components/ProjectCard";
+import DefaultLayout from "../layouts/DefaultLayout";
 import shortid from "shortid";
-import { ProjectList } from "../../data/ProjectList";
+import { ProjectList } from "../data/ProjectList";
 
 const Projects = () => {
   return (
