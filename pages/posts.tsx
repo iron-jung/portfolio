@@ -62,7 +62,7 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
 
 export default Posts;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const results = await NotionService.getDevDatabase();
 
   if (results.length) {
