@@ -23,10 +23,10 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
 
       <DefaultLayout>
         <header className="pt-16 pb-9 sm:pb-16 sm:text-center">
-          <h1 className="mb-4 text-8xl sm:text-4xl tracking-tight text-slate-800 font-extrabold dark:text-slate-200">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Blog
           </h1>
-          <p className="text-lg text-slate-700 dark:text-slate-400">
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             저의 자유로운 블로그 공간으로 이동합니다.
           </p>
         </header>
@@ -46,11 +46,12 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
             })
           ) : (
             <div>
-              <article className="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]">
-                <h3 className="text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200 text-center">
-                  블로그 포스터 정보가 존재하지 않습니다.
-                </h3>
-              </article>
+              <h3 className="text-2xl text-slate-700 tracking-tight font-bold dark:text-slate-200 text-center">
+                블로그 포스터 정보가 존재하지 않습니다.
+              </h3>
+              <h3 className="text-xl text-slate-700 tracking-tight font-base dark:text-slate-200 text-center">
+                조금만 기다리시면 새로운 포스터가 업로드될 예정입니다! 🙏
+              </h3>
             </div>
           )}
         </div>
