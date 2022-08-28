@@ -27,11 +27,11 @@ const PostItem: React.FC<PageType> = ({
         <div className="mb-6 prose prose-slate dark:text-slate-200">
           <p>{subTitle}</p>
         </div>
-        <div className="mt-auto flex flex-row-reverse items-center justify-end">
-          <dl>
-            <dd className="mt-2 text-sm leading-6 dark:text-slate-400 lg:absolute lg:top-0 lg:right-full lg:mr-8 lg:whitespace-nowrap font-bold">
-              {tag.length &&
-                tag.map((t) => {
+        {tag.length > 0 && (
+          <div className="mt-auto flex flex-row-reverse items-center justify-end">
+            <dl>
+              <dd className="mt-2 text-sm leading-6 dark:text-slate-400 lg:absolute lg:top-0 lg:right-full lg:mr-8 lg:whitespace-nowrap font-bold">
+                {tag.map((t) => {
                   return (
                     <span
                       key={t}
@@ -41,10 +41,10 @@ const PostItem: React.FC<PageType> = ({
                     </span>
                   );
                 })}
-            </dd>
-          </dl>
-        </div>
-        <br />
+              </dd>
+            </dl>
+          </div>
+        )}
       </article>
     </div>
   );
