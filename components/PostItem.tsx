@@ -12,13 +12,19 @@ const PostItem: React.FC<PageType> = ({
 }) => {
   moment.locale("ko");
 
+  const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
+
   return (
     <div>
       <article className="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]">
         <h3 className="text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200">
-          <Link href="/">
-            <a>{pageTitle}</a>
-          </Link>
+          <a
+            href={`${BLOG_URL}/${normalizeTitle(pageTitle)}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {pageTitle}
+          </a>
         </h3>
         <p className="mb-4 text-slate-700 tracking-tight font-light text-sm dark:text-slate-200">
           {moment(createdAt).format("LLLL")}
@@ -47,6 +53,21 @@ const PostItem: React.FC<PageType> = ({
         )}
       </article>
     </div>
+  );
+};
+
+const normalizeTitle = (title: string | null): string => {
+  return (
+    (title || "")
+      .replace(/ /g, "-")
+      // [한글주소지원] 대/소문자 영문/숫자가 아닌 경우 문자열 제거됨
+      // .replace(/[^a-zA-Z0-9-]/g, '')
+      .replace(/--/g, "-")
+      .replace(/-$/, "")
+      .replace(/^-/, "")
+      .trim()
+    // [한글주소지원] 소문자화 불필요
+    // .toLowerCase()
   );
 };
 

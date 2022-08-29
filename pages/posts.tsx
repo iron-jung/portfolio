@@ -1,3 +1,4 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import React from "react";
 import PostItem from "../components/PostItem";
@@ -30,7 +31,7 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
             저의 자유로운 블로그 공간으로 이동합니다.
           </p>
         </header>
-        <div className="space-y-16 mx-auto max-w-7xl">
+        <div className="space-y-16 mx-auto max-w-6xl">
           {pages.length ? (
             pages.map((page) => {
               const { id, pageTitle, createdAt, tag, subTitle } = page;
@@ -62,7 +63,7 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
 
 export default Posts;
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const results = await NotionService.getDevDatabase();
 
   if (results.length) {
@@ -117,4 +118,4 @@ export async function getServerSideProps() {
       error: null,
     },
   };
-}
+};

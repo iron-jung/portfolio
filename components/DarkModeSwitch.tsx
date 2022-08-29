@@ -1,22 +1,21 @@
 import React, { useEffect, useRef } from "react";
 import styles from "../styles/DarkModeSwitch.module.css";
 import { BsSun, BsMoonStarsFill } from "react-icons/bs";
+import useDarkMode from "../hooks/useDarkMode";
 
 const DarkModeSwitch: React.FC = () => {
   const checkboxRef = useRef<HTMLInputElement>(null);
+  const { theme, setTheme } = useDarkMode();
 
   useEffect(() => {
-    const htmlEl = document.querySelector("html");
-    const theme = localStorage.getItem("theme");
-
     if (theme === "dark") {
-      htmlEl?.classList.add("dark");
       checkboxRef.current?.setAttribute("checked", "checked");
+      setTheme("dark");
     } else {
-      htmlEl?.classList.remove("dark");
       checkboxRef.current?.removeAttribute("checked");
+      setTheme("light");
     }
-  }, []);
+  }, [theme, setTheme]);
 
   return (
     <div className={styles["toggle-switch"]}>
@@ -33,14 +32,11 @@ const DarkModeSwitch: React.FC = () => {
 
   function click() {
     const isChecked = checkboxRef.current?.checked;
-    const htmlEl = document.querySelector("html");
 
     if (isChecked) {
-      htmlEl?.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      setTheme("dark");
     } else {
-      htmlEl?.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      setTheme("light");
     }
   }
 };
