@@ -19,7 +19,7 @@ export default class NotionService {
       sorts: [
         {
           property: "createdAt",
-          direction: "ascending",
+          direction: "descending",
         },
       ],
       page_size: 10,
