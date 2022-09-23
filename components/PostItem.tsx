@@ -5,6 +5,7 @@ import "moment/locale/ko";
 import { PageType } from "../types";
 
 const PostItem: React.FC<PageType> = ({
+  id,
   pageTitle,
   subTitle,
   createdAt,
@@ -19,7 +20,7 @@ const PostItem: React.FC<PageType> = ({
       <article className="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]">
         <h3 className="text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200">
           <a
-            href={`${BLOG_URL}/${normalizeTitle(pageTitle)}`}
+            href={`${BLOG_URL}/${id.replace(/-/gi, "")}`}
             target="_blank"
             rel="noreferrer"
           >

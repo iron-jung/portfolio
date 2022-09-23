@@ -38,6 +38,7 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
               return (
                 <PostItem
                   key={id}
+                  id={id}
                   pageTitle={pageTitle}
                   subTitle={subTitle}
                   createdAt={createdAt}

@@ -12,6 +12,7 @@ export interface PageTypeInPageObjectResponse extends PageObjectResponse {
 }
 
 export interface PageType {
+  id: string;
   pageTitle: string;
   subTitle: string;
   createdAt: string;
