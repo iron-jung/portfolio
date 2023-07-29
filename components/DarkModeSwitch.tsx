@@ -18,7 +18,7 @@ const DarkModeSwitch: React.FC = () => {
   }, [theme, setTheme]);
 
   return (
-    <div className={styles["toggle-switch"]}>
+    <div className={styles["toggle-switch"]} style={{ height: "30px" }}>
       <label>
         <input type="checkbox" ref={checkboxRef} onClick={click} />
         <span className="toggle-switch__slider"></span>

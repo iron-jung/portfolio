@@ -1,10 +1,14 @@
 import React from "react";
 import { SiGmail, SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Footer = () => {
   return (
     <footer>
       <div className="flex flex-col items-center mt-16">
+        <div className="mb-3">
+          <DarkModeSwitch />
+        </div>
         <div className="flex mb-3 space-x-4">
           <a
             className="text-sm text-gray-500 transition hover:text-gray-600"

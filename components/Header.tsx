@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import React from "react";
 import shortid from "shortid";
 import { MenuList } from "../data/MenuList";
-import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () => {
   const router = useRouter();
@@ -51,9 +50,6 @@ const Header = () => {
             })}
           </ul>
         </div>
-      </div>
-      <div className="absolute top-5 right-3 md:right-10 md:top-7">
-        <DarkModeSwitch />
       </div>
     </nav>
   );
