@@ -10,6 +10,14 @@ interface MyTimeLineType {
 export const MyTimeLine: MyTimeLineType[] = [
   {
     imgSrc: "image/icon/company.svg",
+    title: "알에스솔루션즈",
+    currently: false,
+    fromAt: "2022. 09",
+    toAt: "",
+    desc: "현재 진행중... 카카오모빌리티 자회사 주차관제 부분",
+  },
+  {
+    imgSrc: "image/icon/company.svg",
     title: "(주)코코아플러스",
     currently: false,
     fromAt: "2021. 07",

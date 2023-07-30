@@ -12,7 +12,7 @@ export interface ProjectType {
 
 export const ProjectList: ProjectType[] = [
   {
-    realSrc: "https://fcfootdog.cf",
+    realSrc: "https://fcfootdog.vercel.app/",
     githubSrc: "https://github.com/jungChulOh/foot-dog-info",
     title: "FC 풋도그 공식 사이트 개발",
     desc: "현재 운영중인 축구팀 공식사이트 개발 구글캘린더, 유투브, 밴드 API를 이용하여 팀에 관련된 메타데이터 사용 Vercel을 이용하여 Serverless 방식으로 API 연계 Prettier, EsLint 이용하여 코드 규격에 힘씀",
