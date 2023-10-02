@@ -2,7 +2,7 @@
 FROM node:14-alpine
 
 # 앱 디렉토리 생성 및 작업 디렉토리로 설정
-WORKDIR /oitprotfolio
+WORKDIR /oitportfolio
 
 # package.json과 package-lock.json 복사
 COPY package*.json ./

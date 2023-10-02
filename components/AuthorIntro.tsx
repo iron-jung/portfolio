@@ -4,7 +4,7 @@ const AuthorIntro = () => {
   return (
     <div className="mb-6">
       <h2 className="mt-6 text-xl sm:text-4xl text-gray-600 font-bold capitalize dark:text-white">
-        <p>👋 안녕하세요! O.IT 입니다!</p>
+        <p>👋 안녕하세요! Iron.j 입니다!</p>
       </h2>
       <div className="mt-8 mb-4 text-justify">
         <h2 className="text-lg sm:text-2xl font-bold text-gray-600 dark:text-white">
