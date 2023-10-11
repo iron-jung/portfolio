@@ -14,31 +14,31 @@ const Expertise = () => {
               <img src="/image/icon/jquery.svg" alt="jquery" />
             </picture>
           </li>
-          <li className="flex items-center">
+          {/* <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/nextdotjs.svg" alt="nextdotjs" />
             </picture>
-          </li>
+          </li> */}
           <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/javascript.svg" alt="javascript" />
             </picture>
           </li>
-          <li className="flex items-center">
+          {/* <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/react.svg" alt="react" />
             </picture>
-          </li>
+          </li> */}
           <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/bootstrap.svg" alt="bootstrap" />
             </picture>
           </li>
-          <li className="flex items-center">
+          {/* <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/tailwindcss.svg" alt="tailwindcss" />
             </picture>
-          </li>
+          </li> */}
           <li className="flex items-center">
             <picture className="h-10 w-10">
               <img src="/image/icon/apachecordova.svg" alt="apachecordova" />

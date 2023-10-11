@@ -17,8 +17,8 @@ interface ProfilesType {
 }
 
 export const myInfo: MyInfoType = {
-  name: "정철오(O.IT)",
-  job: "Web Front-End Developer",
+  name: "정철오(Iron.J)",
+  job: "Web Backend Developer",
   mail: "jungjob1114@gmail.com",
   profileImg: "/image/author-img.png",
   profiles: [

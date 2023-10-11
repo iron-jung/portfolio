@@ -8,12 +8,13 @@ export interface ProjectType {
   toAt: string;
   language: string[] | undefined;
   toyProject: boolean;
+  isHidden: boolean;
 }
 
 export const ProjectList: ProjectType[] = [
   {
-    realSrc: "https://fcfootdog.vercel.app/",
-    githubSrc: "https://github.com/jungChulOh/foot-dog-info",
+    realSrc: "https://parking.kakao.com/#section_solution",
+    githubSrc: "",
     title: "FC 풋도그 공식 사이트 개발",
     desc: "현재 운영중인 축구팀 공식사이트 개발 구글캘린더, 유투브, 밴드 API를 이용하여 팀에 관련된 메타데이터 사용 Vercel을 이용하여 Serverless 방식으로 API 연계 Prettier, EsLint 이용하여 코드 규격에 힘씀",
     company: "",
@@ -28,7 +29,8 @@ export const ProjectList: ProjectType[] = [
       "Vercel",
       "Fullcalender",
     ],
-    toyProject: true,
+    toyProject: false,
+    isHidden: true,
   },
   {
     realSrc: "",
@@ -52,6 +54,7 @@ export const ProjectList: ProjectType[] = [
       "Git",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "",
@@ -71,6 +74,7 @@ export const ProjectList: ProjectType[] = [
       "SVN",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "http://www.utic.go.kr",
@@ -90,6 +94,7 @@ export const ProjectList: ProjectType[] = [
       "SVN",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "",
@@ -101,6 +106,7 @@ export const ProjectList: ProjectType[] = [
     toAt: "2021. 04",
     language: ["Node.js", "Koa", "MongoDB", "React", "GitLab", "Git"],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "",
@@ -123,6 +129,7 @@ export const ProjectList: ProjectType[] = [
       "Cordova",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "https://play.google.com/store/apps/details?id=com.wizvil.vlsp",
@@ -145,6 +152,7 @@ export const ProjectList: ProjectType[] = [
       "Cordova",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "https://vlsp.gmsnet.co.kr/",
@@ -166,6 +174,7 @@ export const ProjectList: ProjectType[] = [
       "DataTable",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "",
@@ -188,6 +197,7 @@ export const ProjectList: ProjectType[] = [
       "FCM(Firebase Cloud Message)",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "https://cadillac.gmsnet.co.kr/",
@@ -207,6 +217,7 @@ export const ProjectList: ProjectType[] = [
       "SVN",
     ],
     toyProject: false,
+    isHidden: false,
   },
   {
     realSrc: "https://www.gmsnet.co.kr",
@@ -226,5 +237,26 @@ export const ProjectList: ProjectType[] = [
       "SVN",
     ],
     toyProject: false,
+    isHidden: false,
+  },
+  {
+    realSrc: "https://fcfootdog.vercel.app/",
+    githubSrc: "https://github.com/jungChulOh/foot-dog-info",
+    title: "FC 풋도그 공식 사이트 개발",
+    desc: "현재 운영중인 축구팀 공식사이트 개발 구글캘린더, 유투브, 밴드 API를 이용하여 팀에 관련된 메타데이터 사용 Vercel을 이용하여 Serverless 방식으로 API 연계 Prettier, EsLint 이용하여 코드 규격에 힘씀",
+    company: "",
+    fromAt: "2022. 06",
+    toAt: "2022. 07",
+    language: [
+      "React",
+      "Tailwind",
+      "Redux",
+      "Youtube API",
+      "Band API",
+      "Vercel",
+      "Fullcalender",
+    ],
+    toyProject: true,
+    isHidden: false,
   },
 ];

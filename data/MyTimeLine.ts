@@ -11,10 +11,10 @@ export const MyTimeLine: MyTimeLineType[] = [
   {
     imgSrc: "image/icon/company.svg",
     title: "알에스솔루션즈",
-    currently: false,
+    currently: true,
     fromAt: "2022. 09",
-    toAt: "",
-    desc: "현재 진행중... 카카오모빌리티 자회사 주차관제 부분",
+    toAt: "2023. 10 예정",
+    desc: "카카오모빌리티 주차 파트의 주차장 로컬 서버 신규 개발 및 카카오T 연동과 외부 연동, 주차장 로컬 서버 개발파트 개발 팀장으로 업무 진행",
   },
   {
     imgSrc: "image/icon/company.svg",

@@ -27,9 +27,12 @@ const Projects = () => {
               <div>
                 <div className="container py-12">
                   <div className="flex flex-wrap -m-4">
-                    {ProjectList.map((project) => (
-                      <ProjectCard key={shortid.generate()} {...project} />
-                    ))}
+                    {ProjectList.map(
+                      (project) =>
+                        !project.isHidden && (
+                          <ProjectCard key={shortid.generate()} {...project} />
+                        )
+                    )}
                   </div>
                 </div>
               </div>

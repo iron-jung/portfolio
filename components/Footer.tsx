@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>Copyright © {new Date().getFullYear()}</div>
-          <div>• O.IT Portfolio</div>
+          <div>• Iron.J Portfolio</div>
           {/* <a href="/test">o-it s blog - wowwow pops</a> */}
         </div>
       </div>
