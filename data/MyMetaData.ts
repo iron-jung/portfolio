@@ -20,7 +20,7 @@ export const myInfo: MyInfoType = {
   name: "정철오(Iron.J)",
   job: "Web Backend Developer",
   mail: "jungjob1114@gmail.com",
-  profileImg: "/image/author-img.png",
+  profileImg: "/image/author-img2.jpeg",
   profiles: [
     {
       id: 0,
