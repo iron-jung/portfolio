@@ -19,13 +19,13 @@ const Posts: React.FC<PostsType> = ({ pages, error }) => {
   return (
     <>
       <Head>
-        <title>O.IT Portfolio 📖</title>
+        <title>Iron.J Portfolio - Posts 📖</title>
       </Head>
 
       <DefaultLayout>
         <header className="pt-16 pb-9 sm:pb-16 sm:text-center">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Blog
+            Posts
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             저의 자유로운 블로그 공간으로 이동합니다.
