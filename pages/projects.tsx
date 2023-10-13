@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>O-IT Portfolio 📖</title>
+        <title>Iron.J Portfolio - Projects 📖</title>
       </Head>
 
       <DefaultLayout>
