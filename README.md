@@ -1,8 +1,8 @@
-# O.IT(정철오) Portfolio
+# Iron.J(정철오) Portfolio
 
 @jungChulOh  
 안녕하세요. 저의 Portfolio를 찾아주셔서 대단히 감사합니다.
-![main-page](https://o-it.me/image/oit-portfolio-main.png)
+![main-page](https://iron-j.xyz/image/oit-portfolio-main.png)
 
 해당 프로젝트는 `Next.js`, `Tailwind` 로 개발되었습니다.
 
