@@ -13,7 +13,7 @@ const PostItem: React.FC<PageType> = ({
 }) => {
   moment.locale("ko");
 
-  const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
+  const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL!;
 
   return (
     <div>
